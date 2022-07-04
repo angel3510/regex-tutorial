@@ -1,10 +1,10 @@
-# Title (replace with your title)
+## Regex Tutorial!
 
-Introductory paragraph (replace this with your text)
+Regular expressions, or regex, are a sequence of characters that can be used for finding certain patterns of a string.  When applied to code or search algorithms, regex will find and replace a character or sequence of characters within a string.  The main purpose of regex is to validate input.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+In this tutorial, I will go over the following regular expression that can be used to verify that user input is a valid email address: ```/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/```
 
 ## Table of Contents
 
@@ -46,4 +46,6 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Made by Angel Sandoval
+
+<a href="https://github.com/angel3510">My GitHub Repository</a>
