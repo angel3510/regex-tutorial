@@ -55,15 +55,38 @@ There are three groups that are being captured in this example. The first group 
 
 ### Bracket Expressions
 
+Much like the groups in this example, there are also 3 bracket expressions. The information in the bracket expressions is opened and closed between brackets ```[]```. This indentifies which information is allowed to be matched.
 
+*1st Expression:* ```[a-z0-9_\.-]``` - this bracket includes case sensitive characters from a-z and also numbers from 0-9 an underscore along with periods and hyphens.
+
+*2nd Expression:* ```[\da-z\.-]``` - this bracket includes all digits, case sensitive characters from a-z, periods, and hyphens
+
+*3rd Expression:* ```[a-z\.]``` - this bracket includes case sensitive characters from a-z and periods.
 
 ### Greedy and Lazy Match
 
+So far in this example, we have only used greedy quantifiers ```+``` and ```{}```, meaning it will allow the match to expand as long as it is required to go. If these quantifiers were lazy quantifiers, they would appear as ```+?``` or ```{}?``` meaning it will direct the system to make the shortest match possible.
+
 ### Boundaries
+
+Boundaries ```\b``` make assertions about what can be matched to the left and right of the current position. In non-Unicode mode, it matches a position where only one side is an ASCII letter, digit or underscore. But in Unicode mode, it matches a position where only one side is a Unicode letter, digit or underscore. ```\B```
+
+This is easily done with a pair of word boundaries. Replace both ```^``` and ```$``` with ```\b```. 
+</br>
+
+For instance, ```^[A-Z0-9+_.-]+@[A-Z0-9.-]+$``` becomes ```\b[A-Z0-9+_.-]+@[A-Z0-9.-]+\b```
 
 ### Back-references
 
+Back-references are regex commands which refer to a previous part of the matched regular expression. Back-references are specified with backslash and a single digit: ```\1```. The part of the regular expression they refer to is called a subexpression, and is designated with parentheses. Back-references and subexpressions are used in two cases:
+</br>
+
+*First*, in the regular expression search pattern, and in the replacement part of the 's' command
+*Second*, in a regular expression pattern, back-references are used to match the same content as a previously matched subexpression.
+
 ### Look-ahead and Look-behind
+
+Lookahead and lookbehind, also known as lookaround, are zero-length assertions just like the start and end of line, and start and end with word anchors explained earlier in this tutorial. The key difference is that lookaround actually matches characters, but then gives up the match, returning only the result: match or no match. That is why they are called “assertions”. They don't consume characters in the string, but only assert whether a match is possible or not. Lookaround allows you to create regular expressions that are impossible to create without them.
 
 ## Author
 
