@@ -4,7 +4,8 @@ Regular expressions, or regex, are a sequence of characters that can be used for
 
 ## Summary
 
-In this tutorial, I will go over the following regular expression that can be used to verify that user input is a valid email address: ```/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/```
+In this tutorial, I will go over the following regular expression that can be used to verify that user input is a valid email address:
+</br> ```/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/```
 
 ## Table of Contents
 
