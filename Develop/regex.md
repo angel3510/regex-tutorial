@@ -4,7 +4,7 @@ Regular expressions, or regex, are a sequence of characters that can be used for
 
 ## Summary
 
-In this tutorial, I will go over the following regular expression that can be used to verify that user input is a valid email address:
+In this tutorial, I will go over the following regular expression example that can be used to verify that user input is a valid email address:
 </br> ```/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/```
 
 ## Table of Contents
@@ -35,7 +35,7 @@ The anchors that are used to contain this regular expression are ```^```(start) 
 
 Alternation and grouping are essential features of the modern regular expression, or regex library. You will be able to provide as many terms as you want, as long as they are separated with the pipe character: ```|```. This character separates each term contained within each ```(...)``` group.
 
-Use the | operator (logical OR) to match characters or expression of either the left or right of the | operator.
+Use the ```|``` operator (logical OR) to match characters or expression of either the left or right of the ```|``` operator.
 
 ### Character Classes
 
@@ -51,9 +51,11 @@ In regex for JavaScript, there's a total of 6 flags, with each having a differen
 
 ### Grouping and Capturing
 
-There are three groups being captured in this example. Group #1 is the username of the e-mail account [a-z0-9_\.-]. The second group captures the domain name or e-mail service being used [\da-z\.-]. Lastly, the third group captures the domain extention (i.e .com or .net) [a-z\.]{2,6}
+There are three groups that are being captured in this example. The first group is the username of the e-mail account ```[a-z0-9_\.-]```. The second group captures the domain name or e-mail service being used ```[\da-z\.-]```.  The third group captures the domain extention, ".com" for example ```[a-z\.]{2,6}```.
 
 ### Bracket Expressions
+
+
 
 ### Greedy and Lazy Match
 
